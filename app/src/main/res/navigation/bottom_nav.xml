@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+       android:name="com.example.foodike.presentation.bottomnavigation.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.foodike.presentation.bottomnavigation.fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:label="fragment_favourite"
+        android:name="com.example.foodike.presentation.cart.FavouriteListFragment"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.foodike.presentation.bottomnavigation.fragments.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <activity
+        android:id="@+id/viewCart"
+        android:name="com.example.foodike.presentation.cart.ViewCart"
+        android:label="fragment_view_cart"
+        tools:layout="@layout/fragment_view_cart" />
+</navigation>

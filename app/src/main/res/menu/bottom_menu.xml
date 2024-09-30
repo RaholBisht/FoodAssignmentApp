@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/homeFragment"
+    android:title=""
+    android:icon="@drawable/house"
+    android:iconTint="@android:color/darker_gray"/>
+
+    <item
+        android:id="@+id/favouriteFragment"
+        android:title=""
+        android:icon="@drawable/heart"
+        android:iconTint="@android:color/darker_gray"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title=""
+        android:icon="@drawable/user"
+        android:iconTint="@android:color/darker_gray"/>
+
+    <item
+        android:id="@+id/historyFragment"
+        android:title=""
+        android:icon="@drawable/history"
+        android:iconTint="@android:color/darker_gray"/>
+</menu>

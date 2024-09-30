@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuItemImageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageViewMenuItem"
+            android:layout_width="@dimen/design_image_size_124dp"
+            android:layout_height="@dimen/design_image_size_164dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/applepie"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedSquare" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/design_space_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/design_space_12dp"
+            android:layout_marginEnd="@dimen/design_space_12dp"
+            android:layout_marginBottom="@dimen/design_space_8dp"
+            android:background="@drawable/rounded_corner_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageViewStarIcon"
+                android:layout_width="@dimen/design_image_size_20dp"
+                android:layout_height="@dimen/design_image_size_20dp"
+                android:layout_margin="@dimen/design_space_4dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/star_circle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textCornerRadiusShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/design_space_4dp"
+                android:layout_marginStart="@dimen/design_space_4dp"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                android:text="@string/food_item_label_best_seller"
+                android:textColor="@color/menu_item_text_color"
+                android:textSize="@dimen/design_font_size_12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewStarIcon"
+                app:layout_constraintStart_toEndOf="@+id/imageViewStarIcon"
+                app:layout_constraintTop_toTopOf="@+id/imageViewStarIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/menuItemImageContainer"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/design_image_size_20dp"
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewMenuItemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/design_space_4dp"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                tools:text="Bubur Ayam Pak..."
+                android:textColor="@color/menu_item_text_color"
+                android:textSize="@dimen/design_font_size_18sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewMenuItemIngredients"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/design_space_8dp"
+                android:layout_height="wrap_content"
+                tools:text="Porridge, Rice, Chicken,"
+                android:layout_marginStart="@dimen/design_space_4dp"
+                android:fontFamily="@font/plus_jakarta_sans"
+                android:text="@string/food_item_label_best_seller"
+                android:textColor="@color/menu_item_text_color_grey"
+                android:textSize="@dimen/design_font_size_14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewMenuItemPrice"
+                android:layout_width="wrap_content"
+                android:drawablePadding="@dimen/design_space_4dp"
+                android:drawableStart="@drawable/two_wheeler"
+                android:layout_marginTop="@dimen/design_space_16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/design_space_4dp"
+                android:fontFamily="@font/plus_jakarta_sans_bold"
+                tools:text="Rp 10.000"
+                android:textColor="@color/menu_item_text_color"
+                android:textSize="@dimen/design_font_size_14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewMenuItemDeliveryTime"
+                android:layout_width="wrap_content"
+                android:drawablePadding="@dimen/design_space_4dp"
+                android:layout_marginTop="@dimen/design_space_16dp"
+                android:drawableStart="@drawable/schedule"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/design_space_4dp"
+                android:fontFamily="@font/plus_jakarta_sans"
+                tools:text="12 min . 1 km"
+                android:textColor="@color/menu_item_text_color_grey"
+                android:textSize="@dimen/design_font_size_14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewMenuItemRatingInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/design_space_4dp"
+                android:layout_marginTop="@dimen/design_space_8dp"
+                android:drawableStart="@drawable/grade"
+                android:drawablePadding="@dimen/design_space_4dp"
+                android:fontFamily="@font/plus_jakarta_sans_medium"
+                android:textColor="@color/menu_item_text_color_grey"
+                android:textSize="@dimen/design_font_size_12sp"
+                tools:text="4.9 . 400+ ratings" />
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

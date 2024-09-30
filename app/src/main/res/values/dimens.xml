@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="design_font_size_12sp">12sp</dimen>
+    <dimen name="design_space_4dp">4dp</dimen>
+    <dimen name="design_space_0dp">0dp</dimen>
+    <dimen name="design_image_size_20dp">20dp</dimen>
+    <dimen name="design_space_12dp">12dp</dimen>
+    <dimen name="design_space_8dp">8dp</dimen>
+    <dimen name="design_image_size_124dp">124dp</dimen>
+    <dimen name="design_image_size_164dp">164dp</dimen>
+    <dimen name="design_font_size_18sp">18sp</dimen>
+    <dimen name="design_font_size_14sp">14sp</dimen>
+    <dimen name="design_space_16dp">16dp</dimen>
+    <dimen name="design_font_size_15sp">15sp</dimen>
+    <dimen name="design_space_11dp">11dp</dimen>
+    <dimen name="design_font_size_17sp">17sp</dimen>
+    <dimen name="design_space_27dp">27dp</dimen>
+    <dimen name="design_image_size_10dp">10dp</dimen>
+    <dimen name="design_space_14dp">14dp</dimen>
+    <dimen name="design_space_70dp">70dp</dimen>
+    <dimen name="design_space_80dp">90dp</dimen>
+    <dimen name="design_image_size_40dp">40dp</dimen>
+    <dimen name="design_space_24dp">24dp</dimen>
+    <dimen name="design_space_50dp">50dp</dimen>
+    <dimen name="design_space_32dp">32dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="spalsh_icon_size">73dp</dimen>
+</resources>

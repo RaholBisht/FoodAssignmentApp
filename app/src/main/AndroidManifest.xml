@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".FoodikeApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FoodAssignment"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FeastFinder"
+        tools:targetApi="31">
+        <activity
+            android:name=".presentation.cart.ViewCart"
+            android:exported="false"
+            android:theme="@style/Theme.FeastFinder" />
+        <activity
+            android:name=".presentation.cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.getstarted.GetStarted"
+            android:exported="true"
+            android:theme="@style/Theme.FeastFinder">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.auth.Login_SignUp" />
+        <activity android:name=".presentation.bottomnavigation.BottomNavigation" />
+        <activity android:name=".presentation.cart.ViewCartActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

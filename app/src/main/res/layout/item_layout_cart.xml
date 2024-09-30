@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.foodike.util.SwipeRevealLayout
+    app:dragEdge="right"
+    app:mode="same_level"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:id="@+id/buttonAddFav"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/orange">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/heart">
+
+            </ImageView>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/buttonDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/orange">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_delete_24">
+
+            </ImageView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_cart_bg"
+        android:paddingStart="@dimen/design_space_16dp"
+        android:paddingTop="@dimen/design_space_16dp"
+        android:paddingEnd="@dimen/design_space_24dp"
+        android:paddingBottom="@dimen/design_space_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/menuItemImageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageViewMenuItem"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/applepie"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/Circle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/design_space_8dp"
+            android:paddingEnd="@dimen/design_image_size_40dp"
+            app:layout_constraintStart_toEndOf="@+id/menuItemImageContainer"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/design_image_size_10dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewMenuItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/design_space_4dp"
+                    android:fontFamily="@font/abeezee_italic"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/design_font_size_17sp"
+                    tools:text="Veggie tomato mix" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewMenuItemIngredients"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/design_space_4dp"
+                    android:layout_marginTop="@dimen/design_space_11dp"
+                    android:fontFamily="@font/abeezee_italic"
+                    android:paddingStart="@dimen/design_space_14dp"
+                    android:text="@string/food_item_label_best_seller"
+                    android:textColor="@color/menu_item_cart_item_orange"
+                    android:textSize="@dimen/design_font_size_15sp"
+                    tools:text="#1,900" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_bg"
+            android:backgroundTint="@color/menu_item_cart_item_orange"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/design_space_8dp"
+            android:paddingEnd="@dimen/design_space_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/decrementButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abeezee_italic"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="@dimen/design_font_size_15sp" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/quantityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/design_space_4dp"
+                android:fontFamily="@font/abeezee_italic"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/design_font_size_12sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/incrementButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/design_space_4dp"
+                android:fontFamily="@font/abeezee_italic"
+                android:text="+"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/design_font_size_12sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.example.foodike.util.SwipeRevealLayout>
